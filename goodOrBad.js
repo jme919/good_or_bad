@@ -10,7 +10,7 @@ function theGood(request, response) {
 	console.log(request);
 }
 
-
+//creating the server//
 var server = http.createServer(theGood);
 server.listen(7000, function(){
 	console.log("listening at http://localhost:7000/")
@@ -25,6 +25,7 @@ function theBad(request, response) {
 	console.log(request);
 }
 
+//creating the server//
 var serverB = http.createServer(theBad);
 
 serverB.listen(7500, function(){
